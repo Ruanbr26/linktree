@@ -5,7 +5,14 @@
     font-family: "Inter", sans-serif;
 }
 body{
+    height: 100vh;
+    justify-content: center;  /*   height: 100vh;
+    justify-content: center; alinha o conteudo */
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
 }
 .cabecalho{
     display: flex;/* FILHOS UM DO LADO DO OUTRO */
@@ -28,11 +35,13 @@ body{
     font-family: "Inter", sans-serif;
 }
 .btns{
+    align-items: center; /* centraliza o texto */
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 .btns a{
+    
     display: flex;
     justify-content: center; /* alinhar eixo X */
     padding: 16px;/* espaçamento interno */
@@ -43,4 +52,7 @@ body{
     background-color: rgb(184, 144, 221);
     color: black;
     text-decoration: none; /* tirar a decoração da tag A */
+}
+.btns a:hover{ /* .btns a:´hover´´{--- seleciona e modifica o estilo da tag, estilizando o conteudo */
+    background-color: rgb(217, 190, 243);
 }
